@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffd1dc;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(255, 182, 193, 0.3) 3px,
+      rgba(255, 182, 193, 0.3) 4px
+    );
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  min-height: 100vh;
+  padding: 16px;
+  image-rendering: pixelated;
+}
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === Ventana === */
+.window {
+  background: #fff0f5;
+  border: 4px solid;
+  border-color: #ffffff #d4899a #d4899a #ffffff;
+  box-shadow: 4px 4px 0 #d4899a;
+}
+
+/* === Barra de título === */
+.title-bar {
+  background: #ffb6c1;
+  border-bottom: 3px solid #d4899a;
+  color: #5c2a3a;
+  padding: 6px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.title-bar-text {
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  color: #5c2a3a;
+}
+
+.title-bar-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.title-bar-controls button {
+  width: 20px;
+  height: 18px;
+  background: #fff0f5;
+  border: 2px solid;
+  border-color: #ffffff #d4899a #d4899a #ffffff;
+  font-size: 10px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #5c2a3a;
+  font-family: "VT323", monospace;
+}
+
+.title-bar-controls button:active {
+  border-color: #d4899a #ffffff #ffffff #d4899a;
+}
+
+/* === Cuerpo de la ventana === */
+.window-body {
+  padding: 16px;
+  color: #5c2a3a;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.window-body p {
+  margin-bottom: 12px;
+}
+
+/* === Botones === */
+.btn {
+  background: #b5e3fa;
+  color: #1a3a5c;
+  border: 3px solid;
+  border-color: #ffffff #7ab8d4 #7ab8d4 #ffffff;
+  padding: 8px 16px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  cursor: pointer;
+  transition: none;
+}
+
+.btn:hover {
+  background: #a0d8f0;
+}
+
+.btn:active {
+  border-color: #7ab8d4 #ffffff #ffffff #7ab8d4;
+}
+
+/* === Campos de texto === */
+.field {
+  margin-top: 12px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 4px;
+  color: #5c2a3a;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+}
+
+.field input {
+  width: 100%;
+  padding: 8px;
+  border: 3px solid;
+  border-color: #d4899a #fff0f5 #fff0f5 #d4899a;
+  background: #fff;
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  color: #5c2a3a;
+}
+
+.field input:focus {
+  outline: 3px solid #b5e3fa;
+  outline-offset: -3px;
+}
+
+/* === Separadores === */
+.window-body hr {
+  border: none;
+  border-top: 3px dashed #ffb6c1;
+  margin: 16px 0;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .desktop { gap: 14px; }
+  .window-body { padding: 12px; }
+}   
