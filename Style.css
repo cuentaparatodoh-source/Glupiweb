@@ -158,3 +158,60 @@ body {
   .desktop { gap: 14px; }
   .window-body { padding: 12px; }
 }   
+/* === Botones de menú === */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.menu-buttons .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  background: #b5e3fa;
+  color: #1a3a5c;
+  border: 3px solid;
+  border-color: #ffffff #7ab8d4 #7ab8d4 #ffffff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: none;
+}
+
+.menu-buttons .btn:hover {
+  background: #a0d8f0;
+}
+
+.menu-buttons .btn:active {
+  border-color: #7ab8d4 #ffffff #ffffff #7ab8d4;
+}
+
+/* === Menú (menu.html) === */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  padding: 10px 14px;
+  color: #1a3a5c;
+  text-decoration: none;
+  background: #b5e3fa;
+  border: 3px solid;
+  border-color: #ffffff #7ab8d4 #7ab8d4 #ffffff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+}
+
+.menu-item:hover {
+  background: #a0d8f0;
+}
+
+.menu-item:active {
+  border-color: #7ab8d4 #ffffff #ffffff #7ab8d4;
+}   
